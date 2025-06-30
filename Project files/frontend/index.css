@@ -1,0 +1,193 @@
+/* DocSpot Ultra-Professional Styles */
+body {
+  min-height: 100vh;
+  font-family: 'Segoe UI', 'Roboto', 'Arial', sans-serif;
+  color: #222;
+  background: linear-gradient(120deg, #e3f2fd 0%, #bbdefb 50%, #e1f5fe 100%);
+  background-size: 200% 200%;
+  animation: gradientMove 8s ease-in-out infinite;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.navbar {
+  box-shadow: 0 4px 24px rgba(25, 118, 210, 0.10);
+  background: rgba(255,255,255,0.85);
+  border-bottom: 2px solid #e3f2fd;
+  backdrop-filter: blur(8px);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  transition: background 0.3s;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  color: #1565c0 !important;
+  letter-spacing: 1.5px;
+  font-size: 2rem;
+  text-shadow: 0 2px 8px #90caf9;
+}
+
+.nav-link {
+  font-weight: 500;
+  color: #1976d2 !important;
+  transition: color 0.2s, text-shadow 0.2s;
+  font-size: 1.08rem;
+}
+
+.nav-link:hover, .nav-link.active {
+  color: #0d47a1 !important;
+  text-shadow: 0 2px 8px #90caf9;
+}
+
+.btn-primary, .btn-primary:active, .btn-primary:focus {
+  background: linear-gradient(90deg, #1976d2 60%, #42a5f5 100%) !important;
+  border: none !important;
+  box-shadow: 0 2px 12px rgba(25, 118, 210, 0.12);
+  border-radius: 24px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  padding: 0.7rem 2.2rem;
+  transition: background 0.2s, box-shadow 0.2s, transform 0.2s;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(90deg, #1565c0 60%, #1976d2 100%) !important;
+  box-shadow: 0 6px 24px rgba(25, 118, 210, 0.18);
+  transform: translateY(-2px) scale(1.03);
+}
+
+.btn-outline-danger {
+  border-radius: 24px;
+  border: 1.5px solid #d32f2f;
+  color: #d32f2f;
+  background: #fff;
+  font-weight: 600;
+  padding: 0.7rem 2.2rem;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+}
+
+.btn-outline-danger:hover {
+  background: #d32f2f;
+  color: #fff;
+  box-shadow: 0 4px 16px rgba(211, 47, 47, 0.12);
+}
+
+.container {
+  border-radius: 24px;
+  background: rgba(255,255,255,0.75);
+  box-shadow: 0 8px 48px 0 rgba(25, 118, 210, 0.13), 0 1.5px 8px 0 rgba(25, 118, 210, 0.08);
+  padding: 2.8rem 3.5rem;
+  margin-top: 3rem;
+  backdrop-filter: blur(10px);
+  border: 1.5px solid #e3f2fd;
+}
+
+h1, h2, h4 {
+  color: #1976d2;
+  font-weight: 800;
+  letter-spacing: 0.7px;
+  text-shadow: 0 2px 8px #e3f2fd;
+}
+
+.table th {
+  background: #e3f2fd;
+  color: #1976d2;
+  font-weight: 700;
+  font-size: 1.08rem;
+  border-top: none;
+}
+
+input, select, textarea {
+  border-radius: 12px !important;
+  border: 1.5px solid #90caf9 !important;
+  background: #f5faff !important;
+  transition: border 0.2s, box-shadow 0.2s;
+  font-size: 1.08rem;
+  padding: 0.7rem 1.1rem;
+  box-shadow: 0 1px 4px rgba(25, 118, 210, 0.04);
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: #1976d2 !important;
+  box-shadow: 0 0 0 2px #90caf9;
+  background: #fff !important;
+}
+
+.alert-success {
+  background: #e8f5e9;
+  color: #388e3c;
+  border: none;
+  font-weight: 600;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(56, 142, 60, 0.08);
+}
+
+.alert-danger {
+  background: #ffebee;
+  color: #d32f2f;
+  border: none;
+  font-weight: 600;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(211, 47, 47, 0.08);
+}
+
+.card {
+  border-radius: 20px;
+  background: rgba(255,255,255,0.85);
+  box-shadow: 0 8px 32px rgba(25, 118, 210, 0.16), 0 1.5px 8px rgba(25, 118, 210, 0.08);
+  transition: box-shadow 0.2s, transform 0.2s, background 0.2s;
+  border: 1.5px solid #e3f2fd;
+  backdrop-filter: blur(6px);
+}
+
+.card:hover {
+  box-shadow: 0 16px 48px rgba(25, 118, 210, 0.22);
+  transform: translateY(-6px) scale(1.025);
+  background: rgba(255,255,255,0.95);
+}
+
+.card-title {
+  color: #1976d2;
+  font-weight: 700;
+  font-size: 1.25rem;
+  letter-spacing: 0.5px;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  background: #e3f2fd;
+}
+::-webkit-scrollbar-thumb {
+  background: #90caf9;
+  border-radius: 8px;
+}
+
+.form-label {
+  font-weight: 600;
+  color: #1976d2;
+  letter-spacing: 0.2px;
+}
+
+.form-control, .form-select {
+  min-height: 48px;
+  font-size: 1.08rem;
+  border-radius: 12px;
+}
+
+.mt-5 {
+  margin-top: 3.5rem !important;
+}
+
+.mb-3 {
+  margin-bottom: 1.7rem !important;
+}
+
+.text-center {
+  text-align: center !important;
+} 
